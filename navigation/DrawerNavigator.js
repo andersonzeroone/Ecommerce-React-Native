@@ -6,6 +6,7 @@ import LogoTitle from '../components/LogoTitle'
 import Menudrawer from '../components/Menudrawer'
 import MenuSearchCart from '../components/MenuSearchCart'
 import commonStyles from '../src/commonStyles'
+
 const HomeStackNavigator = createStackNavigator({
     Home: {
       screen: HomeScreen,
@@ -20,6 +21,7 @@ const HomeStackNavigator = createStackNavigator({
       })
     }
   })
+
 const ProfileStackNavigator = createStackNavigator({
     Home: {screen: ProfileScreen,
       navigationOptions:({navigation}) => ({
@@ -33,6 +35,7 @@ const ProfileStackNavigator = createStackNavigator({
       })
     }
   })
+
 const SettingsStackNavigator = createStackNavigator({
     Home: {screen: SettingsScreen,
       navigationOptions:({navigation}) => ({
@@ -95,6 +98,6 @@ const MyDrawernavigation = createDrawerNavigator(
     }
   )
   
-  export default createAppContainer(MyDrawernavigation)
+export default createAppContainer(MyDrawernavigation)
   
   
